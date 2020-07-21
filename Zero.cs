@@ -2,10 +2,11 @@ using System;
 
 namespace garys_garage
 {
-    public class Zero : Vehicle
+    public class Zero : Electric
     {  // Electric motorcycle
-        public double BatteryKWh { get; set; }
 
-        public void ChargeBattery() { }
+        public void doSpecificMotorcycleStuff(){
+            Console.WriteLine("I am absolutely a motorcylce");
+        }
     }
 }

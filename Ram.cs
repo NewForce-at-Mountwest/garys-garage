@@ -1,9 +1,7 @@
 namespace garys_garage
 {
-    public class Ram : Vehicle
+    public class Ram : GasPowered
     {  // Gas powered truck
-        public double FuelCapacity { get; set; }
 
-        public void RefuelTank() { }
     }
 }

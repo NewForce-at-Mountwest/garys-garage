@@ -1,8 +1,11 @@
+using System;
+
 namespace garys_garage
 {
-    public class Cessna : Vehicle
+    public class Cessna : GasPowered
     {  // Propellor light aircraft
-        public double FuelCapacity { get; set; }
-        public void RefuelTank() { }
+        public void Fly(){
+            Console.WriteLine("WHEEEEE!");
+        }
     }
 }
