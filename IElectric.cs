@@ -2,11 +2,11 @@ using System;
 
 namespace garys_garage
 {
-    public class Electric : Vehicle
+    public interface IElectric
     {
         public double BatteryKWh { get; set; }
 
-        public void ChargeBattery() { }
+        public void ChargeBattery();
 
     }
 }

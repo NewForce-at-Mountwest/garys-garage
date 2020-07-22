@@ -1,13 +1,28 @@
+using System;
+
 namespace garys_garage
 {
-    public class Prius : GasPowered // NOOOOOO
+    public class Prius : IVehicle, IGasPowered, IElectric // YAAAAASS
     {
 
-        // Oh no! We have a hybrid car. It's sometimes powered by gas and sometimes powered by battery. It should be able to park in either garage, and it needs properties of both a electric and a gas powered car. For instance, we need both fuel capacity AND battery kwh.
+        public string MainColor { get; set; }
+        public string MaximumOccupancy { get; set; }
+        public double FuelCapacity { get; set; }
+        public double BatteryKWh { get; set; }
 
-        // We can only inherit from one place at a time, so we're in a pickle. Ideally, we'd really want to use properties from both.
+        public void ChargeBattery()
+        {
+            Console.WriteLine("The battery is charging!");
+        }
 
-        // We could also have Prius inherit straight from Vehicle, instead of from GasPowered or Electric, but then we miss out on all the good stuff in those classes and we'd still be duplicating code.
+        public void Drive()
+        {
+            throw new System.NotImplementedException();
+        }
 
+        public void RefuelTank()
+        {
+            throw new System.NotImplementedException();
+        }
     }
 }

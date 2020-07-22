@@ -2,9 +2,18 @@ using System;
 
 namespace garys_garage
 {
-    public class Tesla : Electric
+    public class Tesla : IElectric, IVehicle
     {  // Electric car
-        public override void Drive(){
+        public double BatteryKWh { get; set; }
+        public string MainColor { get; set; }
+        public string MaximumOccupancy { get; set; }
+
+        public void ChargeBattery()
+        {
+            Console.WriteLine("Charging");
+        }
+
+        public void Drive(){
             Console.WriteLine("crickets");
         }
     }

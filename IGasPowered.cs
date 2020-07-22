@@ -2,11 +2,11 @@ using System;
 
 namespace garys_garage
 {
-    public class GasPowered : Vehicle
+    public interface IGasPowered
     {
         public double FuelCapacity { get; set; }
 
-        public void RefuelTank() { }
+        public void RefuelTank();
 
     }
 }
