@@ -61,6 +61,13 @@ namespace garys_garage
             // gasPoweredVehicles.Add(fancyCar);
 
 
+
+
+
+            ElectricGarage newGarage = new ElectricGarage();
+            newGarage.AddToGarage(fancyCar);
+            // newGarage.AddToGarage(personalJet); // Won't work!
+
             personalJet.Drive();
             fancyCar.Drive();
 
